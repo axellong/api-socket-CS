@@ -1,3 +1,6 @@
-dist/
-
+# dist/
+global/
+routes/
+sockets/
+classes/
 node_modules/
