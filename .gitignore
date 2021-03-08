@@ -1,6 +1,6 @@
 
-global/
-routes/
-sockets/
-classes/
+global
+routes
+sockets
+classes
 node_modules/
