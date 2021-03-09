@@ -1,6 +1,3 @@
 
-global
-routes
-sockets
-classes
+dist/
 node_modules/
