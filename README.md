@@ -3,6 +3,11 @@ Reconstruir modulos de Node
 ```
 1.- npm install
 ```
+GENERAR EL DIST
+
+despues de instalar lo de abajo 
+
+--  tsc -w
 
 INSTALAR EN DESARROLLO
 ```

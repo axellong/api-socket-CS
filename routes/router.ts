@@ -22,9 +22,10 @@ router.post('/mensajes', (req: Request, res: Response) => {
 
     const cuerpo = req.body.cuerpo;
     const de = req.body.de;
+    const ok = true
 
     res.json({
-        ok: true,
+        ok,
         cuerpo,
         de
         // mensaje: 'POST listo!'
