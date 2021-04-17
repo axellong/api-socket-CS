@@ -1,5 +1,7 @@
 # Socket-Server
+
 Reconstruir modulos de Node
+
 ```
 1.- npm install
 ```
@@ -15,8 +17,10 @@ INSTALAR EN DESARROLLO
 2.- npm install -g nodemon
 
 ```
+
 * Ejecutar en modo administrador Windows
 * CREARA EL DIST(UNA CARPETA PARA PRODUCCIÓN) EN DESARROLLO
+
 ```
 3.- tsc -w
     Trasnpilar codigo a javascript

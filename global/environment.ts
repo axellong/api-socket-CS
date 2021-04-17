@@ -1,3 +1,3 @@
 
 
-export const SERVER_PORT: number = 6000;
+export const SERVER_PORT: number = 3000;

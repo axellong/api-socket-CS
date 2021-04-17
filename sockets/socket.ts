@@ -1,5 +1,6 @@
 import { Socket } from 'socket.io';
 import { isObject } from 'util';
+import router from '../routes/router';
 
 export const desconectar = (cliente: Socket) => {
 
