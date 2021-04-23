@@ -33,7 +33,7 @@ router.post("/savemensaje", (req: Request, res: Response) => {
     mensaje +
     "');";
 
-  let respuesta = cliente.query(query, (err: any, resp: any) => {
+  cliente.query(query, (err: any, resp: any) => {
     if (err) {
       console.log(err);
       res.send(err);
@@ -44,6 +44,18 @@ router.post("/savemensaje", (req: Request, res: Response) => {
 
   // este debe de estar aca afuera porque como node es asic entonces antes de imprimir la respuesta del back lo que hace es cerrar la conexion y por eso no da ningun feedback
 
+  cliente.end();
+});
+
+router.get("/mensajesObtener", (req: Request, res: Response) => {
+  cliente.query("select * from mensajes", (err: any, resp: any) => {
+    if (err) {
+      console.log("no lo trae")
+      res.send(err);
+    } else {
+      res.send(resp)
+    }
+  });
   cliente.end();
 });
 
